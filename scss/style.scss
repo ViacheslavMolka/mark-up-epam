@@ -1,0 +1,321 @@
+@import "./mixins-variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.header {
+  height: 100vh;
+  background: url("../image/layer7.png") no-repeat center center;
+  background-size: cover;
+}
+
+.container {
+  @include placement(space-around, column, center);
+  background-color: rgb(16, 25, 41, 0.5);
+  height: 100vh;
+}
+
+.header__logo {
+  @include font(60px, #fff);
+  font-family: 'Dancing Script', cursive;
+}
+
+.header__top {
+  @include placement(space-between, column, center);
+  height: 15%;
+  width: 30%;
+}
+
+.header__menu {
+  width: 100%;
+  ul {
+    @include placement(space-around);
+    list-style: none;
+  }
+  a {
+    @include font(15px, #fff);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+.header__text-wrapper {
+  @include placement(space-between, column, center);
+  height: 40%;
+  margin-bottom: 50px;
+}
+
+.header__title {
+  @include font(73px, #fff);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header__subtitle {
+  @include font(15px, #fff, 700);
+  margin-bottom: 95px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-color: #fff;
+    opacity: 0.23;
+    height: 2.5px;
+    top: 50%;
+    left: -130px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-color: #fff;
+    opacity: 0.23;
+    height: 2.5px;
+    top: 50%;
+    right: -130px;
+  }
+}
+
+.header__button {
+  @include button(#50c3af, 17px, 50px, 35%);
+}
+
+.block-wrapper {
+  width: 70%;
+}
+
+.about-template {
+  @include placement(center);
+  background-color: #eaeaeb;
+}
+
+.about-template__wrapper {
+  @include placement(space-between);
+  padding: 45px 0 45px 0;
+  height: 30vh;
+}
+
+.content {
+  @include placement(space-evenly, column, center);
+  text-align: center;
+  width: 20%;
+}
+
+.content__title {
+  @include font(17px, $titleColor, 700);
+  position: relative;
+  &::before {
+    @include bottomLine(90%, #293139, 2px, 0.05, -75%, 5%);
+  }
+}
+
+.content__subtitle {
+  @include font(15px, $textColor);
+  line-height: 24px;
+}
+
+.description {
+  @include placement(center);
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box__wrapper {
+  @include placement(space-evenly, column);
+  padding: 75px 0 75px 0;
+  width: 40%;
+  p {
+    @include font(15px, $textColor);
+    width: 95%;
+    padding-top: 30px;
+  }
+}
+
+.box__title {
+  @include font(20px, $titleColor, 700);
+  padding-top: 20px;
+  position: relative;
+  &::before {
+    @include bottomLine(100%, #293139, 2px, 0.05, -20px, 0);
+  }
+}
+
+.box__button {
+  @include button(#50c3af, 15px, 35px, 30%);
+  margin-top: 30px;
+}
+
+.wrapper {
+  @include placement(space-evenly, column);
+  height: 45vh;
+}
+
+.wrapper__logo {
+  display: flex;
+  position: relative;
+  &::before {
+    @include bottomLine(100%, #293139, 2px, 0.05, -32px, 0);
+  }
+  h2 {
+    @include font(19px, #384048, 700);
+    padding-left: 15px;
+  }
+}
+
+.wrapper__text {
+  font-size: 17px;
+  color: $textColor;
+}
+
+.wrapper__button {
+  @include button(#d2d5da, 15px, 35px, 10%)
+}
+
+.box__inner {
+  @include placement(space-evenly, column);
+  padding: 75px 0 75px 0;
+  width: 28%;
+  p {
+    @include font(15px, $textColor);
+    width: 95%;
+    padding-top: 40px;
+  }
+  h2 {
+    @include font(18px, $titleColor, 700);
+    padding-top: 20px;
+    position: relative;
+    &::before {
+      @include bottomLine(100%, #293139, 2px, 0.05, -20px, 0);
+    }
+  }
+}
+
+.box__link {
+  @include font(15px, #50c3af);
+  cursor: pointer;
+  padding-top: 30px;
+  position: relative;
+  span {
+    position: absolute;
+    left: 99px;
+    bottom: -1px;
+  }
+}
+
+.about-template__box {
+  @include placement(space-between);
+  padding: 20px 0 20px 0;
+  .wrapper {
+    width: 40%;
+  }
+}
+
+.wrapper__link {
+  @include button(#50c3af, 15px, 37px, 25%);
+}
+
+.just-for-you {
+  @include placement(space-between);
+  padding: 75px 0 75px 0;
+}
+
+.just-for-you__image {
+  width: 45%;
+}
+
+.just-for-you__text-wrapper {
+  @include placement(space-between, column);
+  width: 45%;
+}
+
+.just-for-you__title {
+  @include font(21px, $titleColor, 700);
+  position: relative;
+  &::before {
+    @include bottomLine(100%, #293139, 2px, 0.05, -20px, 0);
+  }
+}
+
+.just-for-you__text {
+  @include font(17px, $textColor);
+  line-height: 24px;
+}
+
+.just-for-you__button {
+  @include button(#d2d5da, 15px, 35px, 30%);
+  margin-bottom: 10px;
+}
+
+.featured-on {
+  background-color: #50c3af;
+  display: flex;
+  justify-content: center;
+}
+
+.featured-on-companies {
+  @include placement(space-evenly, column, center);
+  height: 35vh;
+}
+
+.featured-on-companies__logo {
+  display: flex;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  h2 {
+    @include font(18px, #fff, 700);
+    padding-left: 10px;
+  }
+}
+
+.featured-on-companies__text {
+  @include placement(space-between);
+  @include font(28px, #fff);
+  width: 100%;
+  opacity: 0.7;
+  span:nth-child(1) {
+    font-family: 'Dancing Script', cursive;
+  }
+  span:nth-child(3) {
+    font-family: 'Cabin', sans-serif;
+  }
+  span:nth-child(4) {
+    font-weight: 700;
+  }
+}
+
+.footer {
+  @include placement(center);
+  background-color: #f5f5f5;
+}
+
+.footer-box {
+  @include placement(space-between, row, center);
+  height: 8vh;
+}
+
+.footer__text {
+  @include font(14px, #aaacaf);
+  span {
+    @include font(14px, $textColor);
+  }
+}
+
+.footer__social-networks {
+  position: relative;
+  a:nth-child(1) {
+    position: absolute;
+    left: -37px;
+    top: 2px;
+  }
+  a:not(:last-child) {
+    padding-right: 18px;
+  }
+}

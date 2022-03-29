@@ -1,0 +1,39 @@
+$titleColor: #40474e;
+$textColor: #787b80;
+
+@mixin button($bgColor, $fSize, $height, $width) {
+  background-color: $bgColor;
+  text-decoration: none;
+  font-size: $fSize;
+  color: #f5f5f5;
+  outline: 0;
+  border-radius: 25px;
+  border: 0;
+  cursor: pointer;
+  height: $height;
+  width: $width;
+}
+
+@mixin placement($jC: flex-start, $fD: row, $aI: stretch) {
+  display: flex;
+  justify-content: $jC;
+  flex-direction: $fD;
+  align-items: $aI;
+}
+
+@mixin bottomLine($width, $bC, $height, $opacity, $bottom, $left) {
+  content: '';
+  position: absolute;
+  width: $width;
+  background-color: $bC;
+  opacity: $opacity;
+  height: $height;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin font($fontS, $color, $fontW: 400) {
+  font-size: $fontS;
+  color: $color;
+  font-weight: $fontW;
+}
