@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script:wght@700&family=Open+Sans:wght@600&family=PT+Sans:wght@400;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
   <header class="header">
@@ -16,18 +16,18 @@
       <div class="header__top">
         <span class="header__logo">Elena</span>
         <nav class="header__menu">
-          <ul>
+          <ul class="header__list">
             <li>
-              <a href="#">HOME</a>
+              <a class="header__link" href="#">HOME</a>
             </li>
             <li>
-              <a href="#">SERVICES</a>
+              <a class="header__link" href="#">SERVICES</a>
             </li>
             <li>
-              <a href="#">FEATURES</a>
+              <a class="header__link" href="#">FEATURES</a>
             </li>
             <li>
-              <a href="#">CONTACT</a>
+              <a class="header__link" href="#">CONTACT</a>
             </li>
           </ul>
         </nav>
@@ -35,158 +35,163 @@
       <div class="header__text-wrapper">
         <h1 class="header__title">HAVE A GOOD DAY</h1>
         <p class="header__subtitle">JUST FOR YOU ON THEMEFOREST</p>
-        <button class="header__button">GET YOUR COPY NOW</button>
+        <button class="button button_big-size">GET YOUR COPY NOW</button>
       </div>
     </div>
   </header>
-  <section class="about-template">
-    <div class="block-wrapper">
-      <div class="about-template__wrapper">
-        <div class="content">
-          <img class="content__image" src="./image/user_group.png" alt="users"/>
-          <h2 class="content__title">PROFESIONALS</h2>
-          <p class="content__subtitle">Lorem ipsum dolor sit amet consectetur elit.</p>
-        </div>
-        <div class="content">
-          <img class="content__image" src="./image/heart.png" alt="heart"/>
-          <h2 class="content__title">AMATEURS</h2>
-          <p class="content__subtitle">Lorem ipsum dolor sit amet consectetur elit.</p>
-        </div>
-        <div class="content">
-          <img class="content__image" src="./image/headset.png" alt="headset"/>
-          <h2 class="content__title">FOR EVERYONE</h2>
-          <p class="content__subtitle">Lorem ipsum dolor sit amet consectetur elit.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="description">
-    <div class="block-wrapper">
-      <div class="box">
-        <div class="box__wrapper">
-          <img src="./image/rectangle.png" alt="car" />
-          <h2 class="box__title">RESPONSIVE EMAIL TEMPLATE</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis
-          </p>
-          <button class="box__button">Read more</button>
-        </div>
-        <div class="box__wrapper">
-          <img src="./image/rectangle2.png" alt="sea" />
-          <h2 class="box__title">FULLY COMPATIBLE TEMPLATE</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis
-          </p>
-          <button class="box__button">Read more</button>
-        </div>
-      </div>
-    </div>  
-  </section>
-  <section class="about-template">
-    <div class="block-wrapper">
-      <div class="wrapper">
-        <div class="wrapper__logo">
-          <img src="./image/circle.png" alt="circle" />
-          <h2>FULLY SUPPORTED TEMPLATE</h2>
-        </div>
-        <p class="wrapper__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-          sodales risus, a adipiscing lorem commodo vitae. Ut semper semper lacus. Suspendisse
-          convallis vel tellus at consectetur. Aenean risus arcu
-        </p>
-        <button class="wrapper__button">Read more</button>
-      </div>
-    </div>
-  </section>
-  <section class="description">
-    <div class="block-wrapper">
-      <div class="box">
-        <div class="box__inner">
-          <img class="box__image" src="./image/traffic_lights.png" alt="traffic_lights" />
-          <h2>FULLY LAYERED PSD</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <a class="box__link">Check this out <span>></span></a>
-        </div>
-        <div class="box__inner">
-          <img class="box__image" src="./image/girl.png" alt="girl" />
-          <h2>FULL COMPATIBILITY</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <a class="box__link">Check this out <span>></span></a>
-        </div>
-        <div class="box__inner">
-          <img class="box__image" src="./image/shoes.png" alt="shoes" />
-          <h2>VERY GREAT MODULES</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <a class="box__link">Check this out <span>></span></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="about-template">
-    <div class="block-wrapper">
-      <div class="about-template__box">
-        <div class="wrapper">
-          <div class="wrapper__logo">
-            <img src="./image/aircraft.png" alt="aircraft" />
-            <h2>SEND IT NOW</h2>
+  <main>
+    <section class="for-everyone">
+      <div class="block-wrapper">
+        <box class="box box_height-s">
+          <div class="content for-everyone__content">
+            <img class="content__image" src="./image/user_group.png" alt="users"/>
+            <h2 class="content__title">PROFESIONALS</h2>
+            <p class="content__subtitle">Lorem ipsum dolor sit amet consectetur elit.</p>
           </div>
-          <p class="wrapper__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem.
-          </p>
-          <button class="wrapper__link">Read more</button>
-        </div>
-        <div class="wrapper">
-          <div class="wrapper__logo">
-            <img src="./image/pencil.png" alt="pencil" />
-            <h2>VERY NICE TO SEE</h2>
+          <div class="content for-everyone__content">
+            <img class="content__image" src="./image/heart.png" alt="heart"/>
+            <h2 class="content__title">AMATEURS</h2>
+            <p class="content__subtitle">Lorem ipsum dolor sit amet consectetur elit.</p>
           </div>
-          <p class="wrapper__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem.
-          </p>
-          <button class="wrapper__link">Read more</button>
-        </div>
-      </div>  
-    </div>
-  </section>
-  <section class="description">
-    <div class="block-wrapper">
-      <div class="just-for-you">
-        <img class="just-for-you__image" src="./image/people.png" alt="people"/>
-        <div class="just-for-you__text-wrapper">
-          <h2 class="just-for-you__title">JUST FOR YOU ON THEMEFOREST</h2>
-          <p class="just-for-you__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec interdum mollis risus, in mattis erat convallis egestas.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec interdum mollis risus, in mattis erat convallis egestas.
-          </p>
-          <button class="just-for-you__button">Read more</button>
+          <div class="content for-everyone__content">
+            <img class="content__image" src="./image/headset.png" alt="headset"/>
+            <h2 class="content__title">FOR EVERYONE</h2>
+            <p class="content__subtitle">Lorem ipsum dolor sit amet consectetur elit.</p>
+          </div>
+        </box>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="block-wrapper">
+        <box class="box box_height-xl">
+          <div class="content benefits__content">
+            <img src="./image/rectangle.png" alt="car" />
+            <h2 class="content__title content__title_font-size">RESPONSIVE EMAIL TEMPLATE</h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis
+            </p>
+            <button class="button">Read more</button>
+          </div>
+          <div class="content benefits__content">
+            <img src="./image/rectangle2.png" alt="sea" />
+            <h2 class="content__title content__title_font-size">FULLY COMPATIBLE TEMPLATE</h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis
+            </p>
+            <button class="button">Read more</button>
+          </div>
+        </box>
+      </div>
+    </section>
+    <section class="supported-template">
+      <div class="block-wrapper">
+        <div class="box box_height-s">
+          <div class="content supported-template__content">
+            <div class="logo">
+              <img src="./image/circle.png" alt="circle" />
+              <h2 class="logo__title">FULLY SUPPORTED TEMPLATE</h2>
+            </div>
+            <p class="content__text content__text_width">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
+              sodales risus, a adipiscing lorem commodo vitae. Ut semper semper lacus. Suspendisse
+              convallis vel tellus at consectetur. Aenean risus arcu lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Suspendisse malesuada sodales risus
+            </p>
+            <button class="button button_grey">Read more</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="featured-on">
-    <div class="block-wrapper">
-      <div class="featured-on-companies">
-        <div class="featured-on-companies__logo">
-          <img src="./image/star.png" alt=""/>
-          <h2>THIS TEMPLATE WAS FEATURED ON</h2>
-        </div>
-        <div class="featured-on-companies__text">
-          <span>TechCrunch</span>
-          <span>Promail</span>
-          <span>Mashable</span>
-          <span>atlaspix</span>
+    </section>
+    <section class="description">
+      <div class="block-wrapper">
+        <box class="box box_height-l">
+          <div class="content description__content">
+            <img class="content__image" src="./image/traffic_lights.png" alt="traffic_lights" />
+            <h2 class="content__title content__title_line">FULLY LAYERED PSD</h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a class="content__link">Check this out <span>></span></a>
+          </div>
+          <div class="content description__content">
+            <img class="content__image" src="./image/girl.png" alt="girl" />
+            <h2 class="content__title content__title_line">FULL COMPATIBILITY</h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a class="content__link">Check this out <span>></span></a>
+          </div>
+          <div class="content description__content">
+            <img class="content__image" src="./image/shoes.png" alt="shoes" />
+            <h2 class="content__title content__title_line">VERY GREAT MODULES</h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a class="content__link">Check this out <span>></span></a>
+          </div>
+        </box>
+      </div>
+    </section>
+    <section class="send-it">
+      <div class="block-wrapper">
+        <div class="box box_height-s">
+          <div class="content send-it__content">
+            <div class="logo">
+              <img src="./image/aircraft.png" alt="aircraft" />
+              <h2 class="logo__title">SEND IT NOW</h2>
+            </div>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem.
+            </p>
+            <button class="button">Read more</button>
+          </div>
+          <div class="content send-it__content">
+            <div class="logo">
+              <img src="./image/pencil.png" alt="pencil" />
+              <h2 class="logo__title">VERY NICE TO SEE</h2>
+            </div>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem.
+            </p>
+            <button class="button">Read more</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="just-for-you">
+      <div class="block-wrapper">
+        <div class="box box_height-m">
+          <img class="just-for-you__image" src="./image/people.png" alt="people"/>
+          <div class="content just-for-you__content">
+            <h2 class="content__title content__title_font-size">JUST FOR YOU ON THEMEFOREST</h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec interdum mollis risus, in mattis erat convallis egestas.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec interdum mollis risus, in mattis erat convallis egestas.
+            </p>
+            <button class="button button_grey">Read more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-on">
+      <div class="block-wrapper">
+        <div class="featured-on-companies">
+          <div class="logo logo_white">
+            <img src="./image/star.png" alt=""/>
+            <h2 class="logo__title logo__title_white">THIS TEMPLATE WAS FEATURED ON</h2>
+          </div>
+          <div class="featured-on-companies__text">
+            <span>TechCrunch</span>
+            <span>Promail</span>
+            <span>Mashable</span>
+            <span>atlaspix</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="block-wrapper">
       <div class="footer-box">
